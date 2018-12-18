@@ -1,0 +1,36 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+security:
+  user:
+    name: xx
+    password: 123456
+
+config.server:
+  config:
+        uri:  "https://github.com/zlb-config/{application}-config.git"
+        force-pull: true
+        cloneOnStart: false
+
+  resource:
+      uri:  "https://github.com/zlb-resource/{application}-resource.git"
+      force-pull: true
+      cloneOnStart: false
+
+  base:
+    uri:  "https://github.com/zhenglibins/base_config.git"
+    searchPaths: config-repo
+    force-pull: true
+    cloneOnStart: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://148.70.5.68:8761/eureka}
