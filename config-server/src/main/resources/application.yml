@@ -8,10 +8,9 @@ spring:
     config:
       server:
         git:
-security:
-  user:
-    name: xx
-    password: 123456
+
+encrypt:
+  key: zlb
 
 config.server:
   config:
