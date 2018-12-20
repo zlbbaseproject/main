@@ -4,10 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://E:\gitWarehouse\mytest\config-server\config-server.iml" filepath="E:\gitWarehouse\mytest\config-server\config-server.iml" />
+      <module fileurl="file://E:\gitWarehouse\main\config-server\config-server.iml" filepath="E:\gitWarehouse\main\config-server\config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://E:\gitWarehouse\mytest\demo\demo.iml" filepath="E:\gitWarehouse\mytest\demo\demo.iml" />
+      <module fileurl="file://E:\gitWarehouse\main\demo\demo.iml" filepath="E:\gitWarehouse\main\demo\demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://E:\gitWarehouse\mytest\eureka-server\eureka-server.iml" filepath="E:\gitWarehouse\mytest\eureka-server\eureka-server.iml" />
+      <module fileurl="file://E:\gitWarehouse\main\eureka-server\eureka-server.iml" filepath="E:\gitWarehouse\main\eureka-server\eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/main.iml" filepath="$PROJECT_DIR$/main.iml" />
     </modules>
   </component>
