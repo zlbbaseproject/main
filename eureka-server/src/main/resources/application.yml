@@ -9,6 +9,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+      ##自我保护模式
+      enable-self-preservation: false
 
 spring:
   application:

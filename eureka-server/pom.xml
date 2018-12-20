@@ -24,4 +24,41 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<filters>
+			<filter>src/main/config/config-${active.profile}.properties</filter>
+		</filters>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<active.profile>dev</active.profile>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>txyun</id>
+			<properties>
+				<active.profile>txyun</active.profile>
+			</properties>
+		</profile>
+	</profiles>
+
 </project>
