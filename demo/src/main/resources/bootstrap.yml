@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-      hostname: 148.70.5.68
+      hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://148.70.5.68:8761/eureka/
