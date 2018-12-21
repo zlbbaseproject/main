@@ -18,3 +18,10 @@ spring:
         enabled: true
         service-id: config-server
       label: master
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info

@@ -38,7 +38,7 @@ public class DemoApplication {
 		String url = "";
 		url = request.getScheme() +"://" + request.getServerName()
 				+ ":" +request.getServerPort()
-				+ "/refresh";
+				+ "/actuator/refresh";
 		HttpUtil.httpPostWithJSONString(url,null,3000);
 		return "ok";
 	}
