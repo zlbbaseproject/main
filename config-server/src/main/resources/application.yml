@@ -30,6 +30,9 @@ config.server:
     cloneOnStart: true
 
 eureka:
+  instance:
+      hostname: @eureka.instance.hostname@
+      ip-address: @eureka.instance.hostname@
   client:
     service-url:
       defaultZone: ${EUREKA_URL:@defaultZone@}
