@@ -32,4 +32,4 @@ config.server:
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URL:http://148.70.5.68:8761/eureka}
+      defaultZone: ${EUREKA_URL:@defaultZone@}
