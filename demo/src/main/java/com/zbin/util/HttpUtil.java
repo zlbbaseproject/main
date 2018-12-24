@@ -3,7 +3,6 @@ package com.zbin.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.netflix.discovery.util.StringUtil;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpEntity;
