@@ -39,7 +39,7 @@ public class DemoApplication {
 		url = request.getScheme() +"://" + request.getServerName()
 				+ ":" +request.getServerPort()
 				+ "/actuator/refresh";
-		HttpUtil.httpPostWithJSONString(url,null,5000);
+		HttpUtil.httpPostWithJSONString(url,null,3000);
 		return "ok";
 	}
 }
