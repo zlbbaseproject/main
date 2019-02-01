@@ -1,6 +1,6 @@
 package com.zbin.test.netty;
 
-import com.example.test.netty.DiscardServerHandler;
+import com.zbin.test.netty.DiscardServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
