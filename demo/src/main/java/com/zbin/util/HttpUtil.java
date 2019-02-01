@@ -347,5 +347,11 @@ public class HttpUtil {
         return HttpClientBuilder.create().setDefaultRequestConfig(config).build();
     }
 
+    public static void main(String[] args) {
+        Boolean aa = false,bb = false;
+        Integer a = null,b=500;
+        int c = 500;
+        System.out.println(b==500);
+    }
 
 }
