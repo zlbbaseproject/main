@@ -110,9 +110,14 @@ public class DistributedRedisLock {
 
     public static void runDemo(DistributedRedisLock lock){
         String indentifier = lock.lockWithTimeout("resource", 5000, 1000);
-        System.out.println(Thread.currentThread().getName() + "获得了锁");
-        System.out.println(--lock.n);
-        lock.releaseLock("resource", indentifier);
+        if(indentifier != null){
+            System.out.println(Thread.currentThread().getName() + "获得了锁");
+            System.out.println(--lock.n+" "+indentifier);
+
+            lock.releaseLock("resource", indentifier);
+        }else{
+            System.out.println("获取锁失败");
+        }
 
 
     }

@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="demo" />
+        <module name="demoa" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="demoa" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="main" target="1.8" />
     </bytecodeTargetLevel>
