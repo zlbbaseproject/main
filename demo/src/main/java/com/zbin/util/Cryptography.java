@@ -133,29 +133,5 @@ public class Cryptography {
 		return null;
 	}
 
-	public static void main(String[] args) {
-		String[] arr = {"B5EAC2E8-10BA-4550-BB49-0B45BB215C3C","913CBF88-5D06-4B60-ADEF-64BFBCFD8115","E637CB6D-C753-4868-9EF1-AD04812E4FBA","767BF4D7-2E92-4773-9BEC-02DF4003913F","86F0499E-8D24-42E3-BC9E-259046CC2C9A","6DA05E18-0AC8-4D99-A85E-0A29635B534E","4D8579AF-D464-4A05-96C1-07B0EFF70CF9","6E975F1E-6E50-4809-93E4-01E283AFB48A","49D50086-50C4-4860-9599-A0FBEB698011","FB80126A-9EB4-4BC9-B8D9-0E48B6A5B6E6","F482939E-B18E-4F7A-819E-510FE3A54EDE","B0A282CB-54E2-456C-ABC2-992E3B861147"};
-		for(String id:arr){
-			test(id);
-		}
 
-	}
-
-	public static void test(String id){
-		SimpleDateFormat sf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		String dates = sf.format(new Date());
-		id += "|"+dates+"|-Chrome";
-		String value = Cryptography.tripleDESEncrypt(id, "~#^&tuandai*%#junte#111!");
-		String tuandaim = Cryptography.tripleDESEncrypt(dates, "~#^&tuandai*%#junte#111!");
-		try {
-			value = URLEncoder.encode(value, "UTF-8");
-			tuandaim = URLEncoder.encode(tuandaim, "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		System.out.println();
-		System.out.println(id);
-		System.out.println("tuandaiw======"+value);
-		System.out.println("tuandaim======"+tuandaim);
-	}
 }
