@@ -32,6 +32,7 @@ public class DemoApplication {
 	}
 
 	public void run(String... strings) throws Exception {
+
 		System.out.println("1234565");
 	}
 
