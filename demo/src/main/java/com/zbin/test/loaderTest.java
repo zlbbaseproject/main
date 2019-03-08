@@ -27,16 +27,16 @@ public class loaderTest {
 //			System.out.println(list.size());
 //		}
 		
-		person p = new person("zheng",31);
-
-		person p2 = new person("zheng",32);
+		person p = new person("zheng",26);
+		person p2 = new person("zheng",27);
+		person2 p3 = new person2("zheng",28);
 		System.out.println(p == p2);
 		System.out.println(p.equals(p2));
-		System.out.print(p.hashCode() + "  "+p2.hashCode());
+		System.out.print(p.hashCode() + "  "+p2.hashCode()+" "+p3.hashCode());
 		HashMap map = new HashMap();
 		map.put(p, 1);
 		map.put(p2, 2);
-
+		map.put(p3, 3);
 		System.out.println(map);
 //		System.out.println(p.equals(p3));
 //		System.out.println("abc".equals("abc"));
@@ -150,7 +150,7 @@ class person2 {
 	}
 	@Override
 	public int hashCode() {
-		return 100;
+		return name.hashCode();
 	}
 	public String getName() {
 		return name;
